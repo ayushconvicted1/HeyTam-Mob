@@ -6,11 +6,12 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "heytam",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "ios": {
       "icon": "./assets/expo.icon"
     },
     "android": {
+      "package": "io.heytam.owner",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -21,7 +22,12 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "Heytam - On-Demand In-House Data Operations & 24/7 Customer Support Teams",
+      "shortName": "Heytam",
+      "description": "On-demand in-house data operations and 24/7 customer support teams for modern businesses, enterprises, and high-growth practices.",
+      "themeColor": "#0D1B4B",
+      "backgroundColor": "#F8FAFC"
     },
     "plugins": [
       "expo-router",
@@ -31,6 +37,18 @@
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      [
+        "expo-status-bar",
+        {
+          "style": "dark"
+        }
+      ],
+      [
+        "expo-navigation-bar",
+        {
+          "style": "dark"
         }
       ]
     ],
